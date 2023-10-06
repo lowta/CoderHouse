@@ -1,0 +1,80 @@
+@mixin flex-wrap-justify {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fotos {
+    @include flex-wrap-justify;
+    flex-direction: row;
+}
+
+#foto {
+    width: 0.0625rem * 296;
+    margin: 50px auto;
+}
+
+.foto-perfil {
+    margin-left: 100px;
+    width: 0.0625rem * 200;
+    border-radius: 100px
+}
+
+#grilla {
+    justify-items: center;
+    align-items: center;
+    margin-top: 20px;
+    display: grid;
+    grid-template-areas: 
+    "foto-perfil username links links" 
+    "foto-perfil ig tw spot";
+    grid-template-rows: 2fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+aside {
+    grid-area: foto-perfil;
+}
+  
+section#username {
+    grid-area: username;
+    font-weight: bold;
+    font-size: 20rem * 0.0625;
+}
+
+a#tw {
+    grid-area: tw;
+    font-weight: bold;
+    font-size: 22rem * 0.0625;
+}
+
+a#ig {
+    grid-area: ig;
+    font-weight: bold;
+    font-size: 22rem * 0.0625;
+}
+  
+a#spot {
+    grid-area: spot;
+    font-weight: bold;
+    font-size: 22rem * 0.0625;
+}
+  
+a#links {
+    color: black;
+    padding: 5px;
+    grid-area: links;
+    font-size: 17rem * 0.0625;
+    border: solid 1px;
+    border-radius: 10px;
+}
+
+.icono-redes {
+    margin-right: 10px; 
+}
+
+#ig, #tw, #spot, #links, #username {
+    color: black;
+    margin: 10px auto;
+}

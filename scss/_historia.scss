@@ -1,0 +1,23 @@
+@mixin flex-wrap-justify {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.titulos-historia {
+    text-align: center;
+    margin: 20px;
+}
+
+.p-historia {
+    @include flex-wrap-justify;
+    text-align: center;
+    margin: 0 auto;
+    width: 85%;
+}
+
+.maps {
+    display: block;
+    margin: 20px auto;
+  }

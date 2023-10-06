@@ -1,0 +1,19 @@
+.titulo-discografia, .div-albumes {
+    text-align: center;
+}
+
+.padre-albumes {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.titulo-discografia {
+    margin: 20px;
+}
+
+.titulo-disco {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}

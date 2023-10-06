@@ -1,0 +1,139 @@
+@mixin flex-wrap-justify {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  @media (max-width: 480px) {
+      
+      .lista-nav {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1px;
+      }
+      
+      .p-index {
+        flex-direction: column;
+        text-align: center;
+        width: 85%;
+        margin: 0 auto;
+      }
+     
+      .section-index {
+        flex-direction: column;
+      }
+  
+  }
+  
+  @media (max-width: 480px) {
+  
+    .lista-nav {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+  }
+  
+  @media (max-width: 768px) {
+    
+    .foto-perfil {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 10px;
+      width: 150rem * 0.0625;
+      border-radius: 100px;
+    }
+    
+    .fotos {
+      display: none;
+    }
+    
+    .contact-form {
+      @include flex-wrap-justify;
+      flex-direction: row;
+      justify-content: none;
+    }
+    
+    #nombre #email #telefono {
+      width: 55%;
+      margin: 15px auto;
+    }
+   
+    #mensaje {
+      margin: 0 auto;
+      margin-top: 20px;
+      width: 55%;
+    }
+    
+    .btn, .btn:hover {
+      width: 100rem * 0.0625;
+    }
+    
+    #grilla {
+      display: flex;
+      flex-direction: column;
+    }
+  
+  }
+  
+  
+  @media (max-width: 610px) {
+    
+    #mensaje {
+      margin: 0 auto;
+      margin-top: 20px;
+      width: 55%;
+    }
+    
+    #nombre #email #telefono {
+      width: 55%;
+      margin: 15px auto;
+    }
+  
+  }
+  
+  @media (max-width: 430px) {
+    
+    .maps {
+      width: 21.875rem;
+      height: 15.625rem;
+    }
+    
+    .btn, .btn:hover {
+      width: 6.25rem;
+      margin: 10px auto;
+      padding: 5px;
+      background-color: white;
+      border: solid 3px black;
+      border-radius: 10px;
+    }
+  
+    .btn:hover {
+      margin: 10px auto;
+      padding: 5px;
+      background-color: black;
+      border-radius: 10px;
+      color: white;
+    }
+  
+    #nombre, #email, #telefono, #mensaje {
+      margin: 10px auto;
+      width: 55%;
+    }
+  
+  }
+  
+  @media (max-width: 320px) {
+    
+    #mensaje {
+      height: 15.625rem;
+    }
+  
+  }  
