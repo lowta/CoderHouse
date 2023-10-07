@@ -8,6 +8,9 @@
     reconocido artista YSY A.">
     <meta name="keywords" content="INICIO PAGINA, YSY A, ARGENTINA, URUGUAY, RAP, TRAP, HISTORIA YSY A, QUINTO ESCALON">
 
+    <!--Link BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
     <!--Imagen favicon-->
     <link rel="shortcut icon" href="../img/logoSponsor.png" type="image/x-icon">
     
@@ -16,35 +19,51 @@
     <title>Historia</title>
 </head>
 <body class="gradiente">
-    <header id="menu">
-        <a href="../index.html">
-            <img src="../img/logoSponsor.png" alt="LogoPage" class="logo">
+    <header>
+        <a class="btn d-grid col-6 mx-auto justify-content-center align-items-center" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            <img src="../img/logoSponsor.png" alt="LogoPage" class="d-grid mx-auto justify-content-center align-items-center">
         </a>
-
-        <nav>
-            <ul class="lista-nav">
-                <li>
-                    <a class="enlaces" href="../index.html">Inicio</a>
-                </li>
-
-                <li>
-                    <a class="enlaces" href="historia.html">Historia</a>
-                </li>
-
-                <li>
-                    <a class="enlaces" href="discografia.html">Discografia</a>
-                </li>
-
-                <li>
-                    <a class="enlaces" href="redes.html">Redes</a>
-                </li>
-
-                <li>
-                    <a class="enlaces" href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+          
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+              </div>
+              <div>
+                <nav>
+                    <ul">
+                        <li>
+                            <a class="enlaces" href="../index.html">Inicio</a>
+                        </li>
+        
+                        <li>
+                            <a class="enlaces" href="historia.html">Historia</a>
+                        </li>
+        
+                        <li>
+                            <a class="enlaces" href="discografia.html">Discografia</a>
+                        </li>
+        
+                        <li>
+                            <a class="enlaces" href="redes.html">Redes</a>
+                        </li>
+        
+                        <li>
+                            <a class="enlaces" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
     </header>
+
+        <main>
+
     <section>
         <h1 class="titulos-historia">La Historia de Alejo Nahuel Acosta</h1>
         <p class="p-historia">YSY A es uno de los artistas más respetados y admirados de la escena
@@ -124,7 +143,12 @@
                 puede comprarlo, él se produce a sí mismo y se hace a mano.
             </p>
     </section>
+
+    </main>
     
+    <!--Link JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
     <footer>
         <p class="p-footer">Pagina web creada para mi proyecto de CoderHouse - Comision 46850.</p>
     </footer>

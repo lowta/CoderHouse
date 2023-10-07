@@ -43,22 +43,6 @@ a {
   color: white;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 15px;
-  margin-top: 10px;
-}
-
-.lista-nav {
-  padding: 5px;
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-bottom: 10px;
-}
-
 .p-index {
   display: flex;
   flex-direction: column;
@@ -145,7 +129,7 @@ input#telefono {
   margin-right: 30px;
 }
 
-.btn {
+.button {
   color: black;
   width: 6.25rem;
   margin: 10px auto;
@@ -154,7 +138,7 @@ input#telefono {
   border: solid 3px black;
   border-radius: 10px;
 }
-.btn:hover {
+.button:hover {
   background-color: black;
   border-radius: 10px;
   color: white;
@@ -261,14 +245,7 @@ a#links {
 }
 
 @media (max-width: 480px) {
-  .lista-nav {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1px;
-  }
+  
   .p-index {
     flex-direction: column;
     text-align: center;
@@ -279,15 +256,7 @@ a#links {
     flex-direction: column;
   }
 }
-@media (max-width: 480px) {
-  .lista-nav {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
+
 @media (max-width: 768px) {
   .foto-perfil {
     display: block;
