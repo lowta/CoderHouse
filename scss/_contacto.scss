@@ -12,36 +12,35 @@
 input#nombre {
     grid-area: nombre;
 }
-  
-  input#email {
+
+input#email {
     grid-area: email;
 }
-  
-  textarea#mensaje {
+
+textarea#mensaje {
     grid-area: mensaje;
 }
-  
-  input#telefono {
+
+input#telefono {
     grid-area: telefono;
 }
 
 .contact-form {
     display: grid;
     grid-template-areas: 
-    "email mensaje" 
-    "nombre mensaje" 
+    "email mensaje"
+    "nombre mensaje"
     "telefono mensaje";
     grid-template-columns: 1fr 1.5fr;
     grid-template-rows: 1fr 1fr 1fr;
+
 }
-  
-#email, #telefono {
+
+#email, #nombre, #telefono {
+    width: 80%;
+    height: 40px;
+    margin: 10px auto;
     align-self: center;
-    justify-self: center;
-    margin-top: 10px;
-    margin-left: 30px;
-    height: 1.875rem;
-    width: 18.75rem;
 }
 
 #mensaje {
@@ -50,24 +49,18 @@ input#nombre {
     margin-right: 30px;
 }
 
-.btn {
+.button {
     color: black;
-    width: 100rem * 0.0625;
+    width: 6.25rem;
     margin: 10px auto;
     padding: 5px;
     background-color: white;
     border: solid 3px black;
     border-radius: 10px;
 
-    &:hover {
-        background-color: black;
-        border-radius: 10px;
-        color: white;
-    }
-
-}
-
-#nombre, #email, #telefono {
-    width: 55%;
-    margin: 15px auto;
+        &:hover {
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+        }
 }

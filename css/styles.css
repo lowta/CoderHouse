@@ -4,6 +4,16 @@
   font-family: "Open Sans", sans-serif;
 }
 
+p {
+  color: white;
+  font-size: 1rem;
+}
+
+h1, h2 {
+  color: white;
+  font-size: 1.7rem;
+}
+
 footer {
   text-align: center;
   margin: 15px 0 15px 0;
@@ -14,28 +24,13 @@ footer .p-footer {
 }
 
 .gradiente {
-  background-image: linear-gradient(white, grey);
+  background-image: radial-gradient(#dc5315, #0e2471);
 }
 
 .enlaces {
   padding: 7px;
   color: white;
-  background-color: black;
-  border-radius: 8px;
-}
-.enlaces:hover {
-  background-color: white;
-  color: black;
-  padding: 7px;
-  border-radius: 8px;
-  border: solid 1px;
-}
-.enlaces:active {
-  background-color: white;
-  color: black;
-  padding: 7px;
-  border-radius: 8px;
-  border: solid 1px;
+  text-decoration: none;
 }
 
 a {
@@ -43,17 +38,56 @@ a {
   color: white;
 }
 
+.logo {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.arrow, .arrow-disco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: fixed;
+  bottom: 10%;
+  right: 50px;
+}
+
+.flecha {
+  width: 30px;
+}
+
+.titulos-index {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px auto;
+  width: 85%;
+  align-items: center;
+}
+
 .p-index {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 15px;
+  margin: 10px 15px;
   width: 85%;
   align-items: center;
 }
 
-.section-index, .imagen {
+.padre-hitos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section-index, .imagen, .frames {
   display: flex;
   flex-direction: row;
   margin: 10px auto;
@@ -114,13 +148,11 @@ input#telefono {
   grid-template-rows: 1fr 1fr 1fr;
 }
 
-#email, #telefono {
+#email, #nombre, #telefono {
+  width: 80%;
+  height: 40px;
+  margin: 10px auto;
   align-self: center;
-  justify-self: center;
-  margin-top: 10px;
-  margin-left: 30px;
-  height: 1.875rem;
-  width: 18.75rem;
 }
 
 #mensaje {
@@ -140,18 +172,12 @@ input#telefono {
 }
 .button:hover {
   background-color: black;
-  border-radius: 10px;
   color: white;
-}
-
-#nombre, #email, #telefono {
-  width: 55%;
-  margin: 15px auto;
+  border-radius: 10px;
 }
 
 .fotos {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: row;
@@ -207,7 +233,7 @@ a#spot {
 }
 
 a#links {
-  color: black;
+  color: white;
   padding: 5px;
   grid-area: links;
   font-size: 1.0625rem;
@@ -216,11 +242,12 @@ a#links {
 }
 
 .icono-redes {
+  color: white;
   margin-right: 10px;
 }
 
 #ig, #tw, #spot, #links, #username {
-  color: black;
+  color: white;
   margin: 10px auto;
 }
 
@@ -236,7 +263,7 @@ a#links {
   justify-content: center;
   text-align: center;
   margin: 0 auto;
-  width: 85%;
+  width: 75%;
 }
 
 .maps {
@@ -245,7 +272,6 @@ a#links {
 }
 
 @media (max-width: 480px) {
-  
   .p-index {
     flex-direction: column;
     text-align: center;
@@ -256,8 +282,19 @@ a#links {
     flex-direction: column;
   }
 }
-
 @media (max-width: 768px) {
+  .arrow {
+    right: 15px;
+  }
+  .section-index, .imagen {
+    flex-direction: column;
+  }
+  .imagen {
+    width: 100%;
+  }
+  .hito {
+    width: 320px;
+  }
   .foto-perfil {
     display: block;
     margin: 0 auto;
@@ -270,30 +307,28 @@ a#links {
   }
   .contact-form {
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction: row;
-    justify-content: none;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: none;
   }
-  #nombre #email #telefono {
+  #nombre, #email, #telefono {
     width: 55%;
-    margin: 15px auto;
+    margin: 10px auto;
   }
   #mensaje {
     margin: 0 auto;
     margin-top: 20px;
     width: 55%;
   }
-  .btn, .btn:hover {
+  .button, .button:hover {
     width: 6.25rem;
   }
   #grilla {
     display: flex;
     flex-direction: column;
   }
-
-
 }
 @media (max-width: 610px) {
   #mensaje {
@@ -305,13 +340,16 @@ a#links {
     width: 55%;
     margin: 15px auto;
   }
+  .titulos-index {
+    font-size: 20px;
+  }
 }
 @media (max-width: 430px) {
   .maps {
     width: 21.875rem;
     height: 15.625rem;
   }
-  .btn, .btn:hover {
+  .button, .button:hover {
     width: 6.25rem;
     margin: 10px auto;
     padding: 5px;
@@ -319,7 +357,7 @@ a#links {
     border: solid 3px black;
     border-radius: 10px;
   }
-  .btn:hover {
+  .button:hover {
     margin: 10px auto;
     padding: 5px;
     background-color: black;
@@ -336,6 +374,17 @@ a#links {
     height: 15.625rem;
   }
 }
-
+@media (min-width: 620px) {
+  .arrow-disco {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .arrow-disco {
+    display: flex;
+    margin: 20px auto;
+    position: initial;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

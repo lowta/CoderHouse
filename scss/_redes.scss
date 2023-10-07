@@ -6,7 +6,9 @@
 }
 
 .fotos {
-    @include flex-wrap-justify;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     flex-direction: row;
 }
 
@@ -62,7 +64,7 @@ a#spot {
 }
   
 a#links {
-    color: black;
+    color: white;
     padding: 5px;
     grid-area: links;
     font-size: 17rem * 0.0625;
@@ -71,10 +73,11 @@ a#links {
 }
 
 .icono-redes {
+    color: white;
     margin-right: 10px; 
 }
 
 #ig, #tw, #spot, #links, #username {
-    color: black;
+    color: white;
     margin: 10px auto;
 }

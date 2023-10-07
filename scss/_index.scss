@@ -5,14 +5,25 @@
     justify-content: center;
 }
 
-.p-index {
+.titulos-index {
     @include flex-wrap-justify;
-    margin: 0 15px;
+    margin: 20px auto;
     width: 85%;
     align-items: center;
 }
 
-.section-index, .imagen {
+.p-index {
+    @include flex-wrap-justify;
+    margin: 10px 15px;
+    width: 85%;
+    align-items: center;
+}
+
+.padre-hitos {
+    @include flex-wrap-justify;
+}
+
+.section-index, .imagen, .frames {
     display: flex;
     flex-direction: row;
     margin: 10px auto;

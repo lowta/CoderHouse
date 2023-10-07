@@ -7,15 +7,6 @@
   
   @media (max-width: 480px) {
       
-      .lista-nav {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        margin-top: 1px;
-      }
-      
       .p-index {
         flex-direction: column;
         text-align: center;
@@ -29,20 +20,24 @@
   
   }
   
-  @media (max-width: 480px) {
-  
-    .lista-nav {
-      display: flex;
-      flex-direction: row;
-      gap: 30px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  
-  }
-  
   @media (max-width: 768px) {
     
+    .arrow {
+      right: 15px;
+    }
+
+    .section-index, .imagen {
+      flex-direction: column;
+    }
+
+    .imagen {
+      width: 100%;
+    }
+
+    .hito {
+      width: 320px;
+    }
+
     .foto-perfil {
       display: block;
       margin: 0 auto;
@@ -56,14 +51,17 @@
     }
     
     .contact-form {
-      @include flex-wrap-justify;
-      flex-direction: row;
-      justify-content: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: column;
+      justify-content: center;
+      justify-self: none;
     }
     
-    #nombre #email #telefono {
+    #nombre, #email, #telefono {
       width: 55%;
-      margin: 15px auto;
+      margin: 10px auto;
     }
    
     #mensaje {
@@ -72,7 +70,7 @@
       width: 55%;
     }
     
-    .btn, .btn:hover {
+    .button, .button:hover {
       width: 100rem * 0.0625;
     }
     
@@ -96,6 +94,10 @@
       width: 55%;
       margin: 15px auto;
     }
+
+    .titulos-index {
+      font-size: 20px;
+    }
   
   }
   
@@ -106,7 +108,7 @@
       height: 15.625rem;
     }
     
-    .btn, .btn:hover {
+    .button, .button:hover {
       width: 6.25rem;
       margin: 10px auto;
       padding: 5px;
@@ -115,7 +117,7 @@
       border-radius: 10px;
     }
   
-    .btn:hover {
+    .button:hover {
       margin: 10px auto;
       padding: 5px;
       background-color: black;
@@ -137,3 +139,17 @@
     }
   
   }  
+
+@media (min-width: 620px) {
+  .arrow-disco {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .arrow-disco {
+    display: flex;
+    margin: 20px auto;
+    position: initial;
+  }
+}
