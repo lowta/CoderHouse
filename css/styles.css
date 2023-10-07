@@ -60,6 +60,10 @@ a {
   width: 30px;
 }
 
+.custom-close {
+  color: white;
+}
+
 .titulos-index {
   display: flex;
   flex-direction: column;
@@ -386,5 +390,6 @@ a#links {
     position: initial;
   }
 }
+/*revisar colores*/
 
 /*# sourceMappingURL=styles.css.map */
