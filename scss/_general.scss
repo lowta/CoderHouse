@@ -1,9 +1,37 @@
 $font: 'Open Sans', sans-serif;
 
+@mixin flex-wrap-justify {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 * {
     margin: 0;
     padding: 0;
     font-family: $font;
+}
+
+li {
+     list-style-type: none;
+     text-decoration: none;
+}
+
+.section-close {
+    @include flex-wrap-justify;
+    justify-content: start;
+    margin-bottom: 10px;
+     .close {
+        right: 10px;
+        top: 22px;
+        height: 30px;
+        width: 30px;
+        border: solid 3px white;
+        border-radius: 20px;
+        font-size: 150px;
+        background-color: transparent;
+     }
 }
 
 p {
@@ -11,7 +39,7 @@ p {
     font-size: 16rem * 0.0625;
 }
 
-h1, h2 {
+h1, h2, h5 {
     color: white;
     font-size: 27.2rem * 0.0625;
 }
@@ -29,12 +57,6 @@ footer {
 
 .gradiente {
     background-image: radial-gradient(#dc5315, #0e2471, );
-}
-
-.enlaces{
-    padding: 7px;
-    color: white;
-    text-decoration: none;
 }
 
 a {
@@ -62,8 +84,4 @@ a {
 
 .flecha {
     width: 30px;
-}
-
-.custom-close {
-    color: white;
 }

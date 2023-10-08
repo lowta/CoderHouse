@@ -4,12 +4,36 @@
   font-family: "Open Sans", sans-serif;
 }
 
+li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.section-close {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: start;
+  margin-bottom: 10px;
+}
+.section-close .close {
+  right: 10px;
+  top: 22px;
+  height: 30px;
+  width: 30px;
+  border: solid 3px white;
+  border-radius: 20px;
+  font-size: 150px;
+  background-color: transparent;
+}
+
 p {
   color: white;
   font-size: 1rem;
 }
 
-h1, h2 {
+h1, h2, h5 {
   color: white;
   font-size: 1.7rem;
 }
@@ -25,12 +49,6 @@ footer .p-footer {
 
 .gradiente {
   background-image: radial-gradient(#dc5315, #0e2471);
-}
-
-.enlaces {
-  padding: 7px;
-  color: white;
-  text-decoration: none;
 }
 
 a {
@@ -58,10 +76,6 @@ a {
 
 .flecha {
   width: 30px;
-}
-
-.custom-close {
-  color: white;
 }
 
 .titulos-index {
