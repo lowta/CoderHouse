@@ -71,7 +71,7 @@ a {
   gap: 20px;
   position: fixed;
   bottom: 10%;
-  right: 50px;
+  right: 25px;
 }
 
 .flecha {
@@ -212,16 +212,6 @@ input#telefono {
   border-radius: 100px;
 }
 
-#grilla {
-  justify-items: center;
-  align-items: center;
-  margin-top: 20px;
-  display: grid;
-  grid-template-areas: "foto-perfil username links links" "foto-perfil ig tw spot";
-  grid-template-rows: 2fr 2fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
 aside {
   grid-area: foto-perfil;
 }
@@ -255,7 +245,7 @@ a#links {
   padding: 5px;
   grid-area: links;
   font-size: 1.0625rem;
-  border: solid 1px;
+  border: solid 1px black;
   border-radius: 10px;
 }
 
@@ -267,6 +257,16 @@ a#links {
 #ig, #tw, #spot, #links, #username {
   color: white;
   margin: 10px auto;
+}
+
+#grilla {
+  justify-items: center;
+  align-items: center;
+  margin-top: 20px;
+  display: grid;
+  grid-template-areas: "foto-perfil username links links" "foto-perfil ig tw spot";
+  grid-template-rows: 2fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .titulos-historia {
@@ -364,8 +364,7 @@ a#links {
 }
 @media (max-width: 430px) {
   .maps {
-    width: 21.875rem;
-    height: 15.625rem;
+    width: 85%;
   }
   .button, .button:hover {
     width: 6.25rem;
@@ -404,6 +403,5 @@ a#links {
     position: initial;
   }
 }
-/*revisar colores*/
 
 /*# sourceMappingURL=styles.css.map */
