@@ -75,14 +75,20 @@
     </main>
 
     <h1 class="titulo-contacto">Dejanos tu comentario o sugerencia!</h1>
-    <div class="contact-form">
+
+    <form class="contact-form">
+        <label for="nombre"></label>
         <input class="form-input" type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido">
+        <label for="email"></label>
         <input class="form-input" type="email" name="email" id="email" placeholder="Correo electrónico">
+        <label for="telefono"></label>
         <input class="form-input" type="number" id="telefono" placeholder="Telefono">
+        <label for="mensaje"></label>
         <textarea class="form-message" name="mensaje" id="mensaje" cols="50" rows="15" placeholder=" Escribi tu mensaje..." required=""></textarea>
         <input class="button" type="submit" value="Enviar">
         <input class="button" type="reset" value="Resetear">
-    </div>
+    </form>
+        
 
     </main>
    
